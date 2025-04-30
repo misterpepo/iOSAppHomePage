@@ -1,297 +1,102 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>退院サポート - 医療・福祉専門職のための環境評価アプリ</title>
-    <meta name="description" content="理学療法士・作業療法士・介護支援専門員向けの退院前訪問支援アプリ。ARを活用した測定機能、間取り図作成、PDF報告書生成などの機能を搭載。">
-    <meta name="keywords" content="退院支援,退院前訪問,住環境評価,AR測定,間取り図,理学療法,作業療法,福祉住環境,介護支援,住宅改修,バリアフリー">
+    <title>Privacy Policy - Rehabilitation Environment Checklist</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
         body {
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
-            background-color: #f8f9fa;
-        }
-        header {
-            background: linear-gradient(135deg, #0066cc, #003366);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-        .container {
-            max-width: 1200px;
+            color: #333;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2a5885;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
         }
         h2 {
-            font-size: 2rem;
-            margin: 40px 0 20px;
-            color: #0066cc;
-        }
-        h3 {
-            font-size: 1.5rem;
-            margin: 30px 0 15px;
-            color: #0066cc;
+            margin-top: 30px;
         }
         p {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-        .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        .app-store-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 30px;
-            background-color: #0066cc;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .app-store-btn:hover {
-            background-color: #004c99;
-        }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 50px 0;
-        }
-        .feature {
-            flex: 0 0 calc(33.333% - 20px);
-            margin-bottom: 40px;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: white;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .feature:hover {
-            transform: translateY(-5px);
-        }
-        .feature-icon {
-            font-size: 48px;
-            color: #0066cc;
-            margin-bottom: 20px;
-        }
-        .screenshots {
-            margin: 50px 0;
-            text-align: center;
-        }
-        .screenshot-wrapper {
-            display: flex;
-            overflow-x: auto;
-            margin: 20px 0;
-            padding: 20px 0;
-        }
-        .screenshot {
-            min-width: 300px;
-            height: 600px;
-            margin: 0 15px;
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .screenshot img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .testimonials {
-            background-color: #e6f2ff;
-            padding: 50px 0;
-            margin: 50px 0;
-        }
-        .testimonial {
-            max-width: 800px;
-            margin: 0 auto 30px;
-            padding: 25px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .testimonial p {
+        .date {
+            color: #666;
             font-style: italic;
+            margin-top: 30px;
         }
-        .testimonial-author {
-            text-align: right;
-            font-weight: bold;
-        }
-        .cta {
-            text-align: center;
-            padding: 70px 0;
-            background: linear-gradient(135deg, #0066cc, #003366);
-            color: white;
-            margin: 50px 0;
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-        .footer-links {
-            margin: 20px 0;
-        }
-        .footer-links a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .feature {
-                flex: 0 0 100%;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.7rem;
-            }
-            h3 {
-                font-size: 1.3rem;
-            }
+        .contact {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>退院サポート</h1>
-            <p class="subtitle">理学療法士・作業療法士・介護支援専門員向けの退院前訪問支援アプリ</p>
-            <a href="#download" class="app-store-btn">App Storeでダウンロード</a>
-        </div>
-    </header>
-
-    <section class="container">
-        <h2>医療・福祉の専門職向け 退院前訪問支援ツール</h2>
-        <p>「退院サポート」は、理学療法士、作業療法士、介護支援専門員のための退院前訪問アセスメントを効率化するiOS専用アプリケーションです。AR技術を活用した計測機能や使いやすい間取り図エディタなど、専門職の現場ニーズに応える機能を多数搭載しています。</p>
-        
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">📋</div>
-                <h3>患者情報の一元管理</h3>
-                <p>患者の基本情報から医療・介護関連情報まで一括管理。チーム内の情報共有もスムーズに。</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">📏</div>
-                <h3>AR寸法測定</h3>
-                <p>iPhoneやiPadのカメラを使用して、ドアの幅や段差の高さなどを正確に測定し記録。</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🏠</div>
-                <h3>間取り図作成</h3>
-                <p>直感的な操作で住居の間取り図を簡単に作成。部屋の配置や寸法を視覚的に管理。</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">📸</div>
-                <h3>写真管理機能</h3>
-                <p>各部屋や設備の写真を撮影・保存。AR測定データと連動した写真管理も可能。</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">📄</div>
-                <h3>PDF報告書生成</h3>
-                <p>収集したデータを元に、専門的な退院前訪問報告書をワンタッチで作成・共有。</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">👥</div>
-                <h3>チーム連携</h3>
-                <p>多職種連携を促進する情報共有機能。専門職間のスムーズなコミュニケーションをサポート。</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="screenshots">
-        <div class="container">
-            <h2>アプリ画面</h2>
-            <div class="screenshot-wrapper">
-                <div class="screenshot">
-                    <img src="https://via.placeholder.com/300x600?text=患者一覧画面" alt="患者一覧画面">
-                </div>
-                <div class="screenshot">
-                    <img src="https://via.placeholder.com/300x600?text=AR測定機能" alt="AR測定機能">
-                </div>
-                <div class="screenshot">
-                    <img src="https://via.placeholder.com/300x600?text=間取り図エディタ" alt="間取り図エディタ">
-                </div>
-                <div class="screenshot">
-                    <img src="https://via.placeholder.com/300x600?text=PDF出力画面" alt="PDF出力画面">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <h2>利用者の声</h2>
-            <div class="testimonial">
-                <p>「退院サポートを使い始めてから、訪問評価の効率が格段に上がりました。特にAR測定機能は、一人でも正確な寸法測定ができるため、とても重宝しています。」</p>
-                <div class="testimonial-author">東京都 理学療法士 田中様</div>
-            </div>
-            <div class="testimonial">
-                <p>「間取り図エディタの使いやすさに驚きました。以前は手書きの図面をスキャンしていましたが、このアプリなら現場でその場で作成できて時間短縮になります。」</p>
-                <div class="testimonial-author">大阪府 作業療法士 佐藤様</div>
-            </div>
-            <div class="testimonial">
-                <p>「PDF報告書の生成機能が非常に役立っています。見やすく整理された報告書が自動生成されるので、多職種とのカンファレンスでの情報共有がスムーズになりました。」</p>
-                <div class="testimonial-author">福岡県 介護支援専門員 山田様</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <h2>こんな方におすすめ</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>理学療法士</h3>
-                <p>退院前訪問で住環境評価を行う際の計測や記録をサポート。移動経路の段差や廊下幅などを正確に測定。</p>
-            </div>
-            <div class="feature">
-                <h3>作業療法士</h3>
-                <p>浴室やトイレなどの生活空間の詳細評価に。手すりの位置や高さの検討にAR測定が役立ちます。</p>
-            </div>
-            <div class="feature">
-                <h3>介護支援専門員</h3>
-                <p>住宅改修の必要性判断や具体的提案に活用。正確な情報収集と報告書作成業務を効率化します。</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta" id="download">
-        <div class="container">
-            <h2>今すぐ使ってみませんか？</h2>
-            <p>App Storeから無料でダウンロードできます</p>
-            <a href="https://apps.apple.com/app/id123456789" class="app-store-btn">App Storeでダウンロード</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2025 退院サポート</p>
-            <div class="footer-links">
-                <a href="#">プライバシーポリシー</a>
-                <a href="#">利用規約</a>
-                <a href="#">お問い合わせ</a>
-                <a href="#">サポート</a>
-            </div>
-        </div>
-    </footer>
+    <h1>Privacy Policy</h1>
+    <p>Last Updated: April 30, 2025</p>
+    
+    <h2>Introduction</h2>
+    <p>This Privacy Policy describes how the "Rehabilitation Environment Checklist" ("App") collects, uses, and discloses your information. The App is designed for rehabilitation professionals to assess and document housing environments for patients. We are committed to protecting your privacy and ensuring the security of your data.</p>
+    
+    <h2>Information Collection and Use</h2>
+    <p>The Rehabilitation Environment Checklist app is designed to function entirely offline and locally on your device. We do not collect, transmit, or store any personal data on external servers. All data created within the app is stored locally on your device.</p>
+    
+    <p>The App may collect the following types of information:</p>
+    <ul>
+        <li><strong>Patient Information:</strong> Name, gender, diagnosis, visit date, and other relevant health information that you choose to enter.</li>
+        <li><strong>Housing Environment Data:</strong> Measurements, descriptions, and other details about the patient's living environment.</li>
+        <li><strong>Photos:</strong> Images captured within the app or imported from your photo library.</li>
+        <li><strong>AR Measurements:</strong> Measurement data captured using your device's AR capabilities.</li>
+    </ul>
+    
+    <h2>Data Storage</h2>
+    <p>All data you create in the App is stored locally on your device using iOS's secure storage mechanisms. We do not upload, transmit, or back up your data to any external servers or cloud services. You are responsible for backing up your device according to Apple's recommended procedures to prevent data loss.</p>
+    
+    <h2>Camera and Photo Library Access</h2>
+    <p>The App requests access to your device's camera and photo library to:</p>
+    <ul>
+        <li>Capture new photos of housing environments</li>
+        <li>Import existing photos from your library</li>
+        <li>Use AR functionality for measurements</li>
+    </ul>
+    <p>These permissions are used solely for providing the app's core functionality and no images are transmitted or stored outside your device.</p>
+    
+    <h2>Data Sharing</h2>
+    <p>The App includes functionality to generate and share PDF reports. When you choose to share reports, you determine the recipient and sharing method. We do not have access to or control over the data you choose to share. We recommend exercising caution when sharing reports containing sensitive patient information.</p>
+    
+    <h2>Third-Party Services</h2>
+    <p>The App does not integrate with any third-party analytics services, advertising networks, or social media platforms. We do not share your data with any third parties.</p>
+    
+    <h2>Data Security</h2>
+    <p>We take reasonable measures to protect the information you create within the App by relying on iOS's built-in security features for local data storage. However, no method of electronic storage is 100% secure. We recommend using device passcodes, Touch ID, or Face ID to secure access to your device.</p>
+    
+    <h2>Children's Privacy</h2>
+    <p>The App is intended for use by healthcare professionals and is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us at the address provided below.</p>
+    
+    <h2>Your Rights</h2>
+    <p>Since all data is stored locally on your device, you maintain complete control over your information. You can delete any or all data from the App at any time by using the deletion features within the App or by uninstalling the App.</p>
+    
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+    
+    <h2>Your Consent</h2>
+    <p>By using the App, you consent to our Privacy Policy and agree to its terms. If you do not agree with this policy, please do not use our App.</p>
+    
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <p>Email: [YOUR EMAIL ADDRESS]</p>
+        <p>Address: [YOUR PHYSICAL ADDRESS]</p>
+    </div>
+    
+    <p class="date">Effective: April 30, 2025</p>
 </body>
 </html>
