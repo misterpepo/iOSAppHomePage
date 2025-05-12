@@ -96,38 +96,6 @@
             left: 0;
         }
 
-        .contact-form {
-            margin-top: 20px;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: inherit;
-        }
-
-        .contact-form textarea {
-            min-height: 100px;
-            resize: vertical;
-        }
-
-        .contact-form button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-
-        .contact-form button:hover {
-            background-color: #2980b9;
-        }
-
         .feature-box {
             display: flex;
             flex-wrap: wrap;
@@ -146,6 +114,26 @@
         .feature h3 {
             margin-top: 0;
             color: #3498db;
+        }
+
+        .twitter-button {
+            display: inline-block;
+            background-color: #1DA1F2;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .twitter-button:hover {
+            background-color: #0c85d0;
+        }
+
+        .twitter-button i {
+            margin-right: 8px;
         }
     </style>
 </head>
@@ -195,20 +183,11 @@
 
     <div id="contact" class="contact-section">
         <h2>お問い合わせ</h2>
-        <p>ご質問やご意見、不具合の報告などがございましたら、以下のフォームからお気軽にお問い合わせください。</p>
+        <p>ご質問やご意見、不具合の報告などがございましたら、TwitterのDMよりお気軽にお問い合わせください。通常2営業日以内にご返信いたします。</p>
         
-        <form class="contact-form">
-            <div>
-                <input type="text" name="name" placeholder="お名前" required>
-            </div>
-            <div>
-                <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
-            </div>
-            <div>
-                <button type="submit">送信</button>
-            </div>
-        </form>
-        <p><small>※このフォームはサンプルです。実際のお問い合わせはアプリ内の「設定」>「お問い合わせ」からお願いします。</small></p>
+        <a href="https://twitter.com/tsukare0524" class="twitter-button" target="_blank">
+            <i>🐦</i> Twitter (@tsukare0524) でお問い合わせ
+        </a>
     </div>
 
     <div id="privacy" class="privacy-section">
