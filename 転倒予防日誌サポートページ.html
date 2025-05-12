@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>転倒予防日誌 - サポートページ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .app-description {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        .contact-section {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .privacy-section {
+            margin-top: 40px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #7f8c8d;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.7em;
+            }
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #2ecc71;
+            position: absolute;
+            left: 0;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .contact-form textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+        .feature-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            flex: 1 1 300px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>転倒予防日誌</h1>
+        <p>高齢者の転倒予防をサポートする健康管理アプリ</p>
+    </header>
+
+    <div class="app-description">
+        <h2>アプリについて</h2>
+        <p>「転倒予防日誌」は、日々の健康状態を記録し、適切な体操・運動を提案することで、転倒予防をサポートするアプリです。いつでもどこでも簡単に使え、日常生活の中で健康管理を継続するためのツールとして開発されました。</p>
+        
+        <div class="feature-box">
+            <div class="feature">
+                <h3>転倒予防日誌</h3>
+                <p>日々の健康状態や症状を記録し、時系列で確認できます。連続記録による達成感も健康管理の継続をサポートします。</p>
+            </div>
+            <div class="feature">
+                <h3>転倒予防体操</h3>
+                <p>バランス訓練、筋力強化、柔軟性向上、有酸素運動など、様々なカテゴリーの体操をご提案します。立位・座位の選択も可能です。</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq-item">
+        <p class="question">Q: このアプリは有料ですか？</p>
+        <p>A: いいえ、「転倒予防日誌」は完全無料でご利用いただけます。すべての機能をお使いいただけます。</p>
+    </div>
+    <div class="faq-item">
+        <p class="question">Q: 記録したデータはどこに保存されますか？</p>
+        <p>A: アプリで記録されたデータはすべてあなたのデバイス内のみに保存されます。外部サーバーには送信されませんので、プライバシーを確保しながら安心してご利用いただけます。</p>
+    </div>
+    <div class="faq-item">
+        <p class="question">Q: 体操は毎日行う必要がありますか？</p>
+        <p>A: 毎日行うことが理想的ですが、無理せず自分のペースで行うことが大切です。アプリでは継続記録も表示されるので、モチベーション維持にお役立てください。</p>
+    </div>
+    <div class="faq-item">
+        <p class="question">Q: アプリの使い方がわかりません</p>
+        <p>A: アプリ内の各画面には、使い方のガイドが表示されています。特に「設定」メニューでは、音声ガイダンスや文字サイズの調整も可能です。</p>
+    </div>
+    <div class="faq-item">
+        <p class="question">Q: アプリが起動しない場合はどうすればいいですか？</p>
+        <p>A: iOSを最新バージョンにアップデートしてみてください。また、デバイスを再起動することで問題が解決する場合もあります。</p>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <h2>お問い合わせ</h2>
+        <p>ご質問やご意見、不具合の報告などがございましたら、以下のフォームからお気軽にお問い合わせください。</p>
+        
+        <form class="contact-form">
+            <div>
+                <input type="text" name="name" placeholder="お名前" required>
+            </div>
+            <div>
+                <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
+            </div>
+            <div>
+                <button type="submit">送信</button>
+            </div>
+        </form>
+        <p><small>※このフォームはサンプルです。実際のお問い合わせはアプリ内の「設定」>「お問い合わせ」からお願いします。</small></p>
+    </div>
+
+    <div id="privacy" class="privacy-section">
+        <h2>プライバシーポリシー</h2>
+        <p>「転倒予防日誌」は、ユーザーのプライバシーを尊重し、以下の方針に基づいて個人情報を取り扱います。</p>
+        
+        <h3>1. 収集する情報</h3>
+        <p>本アプリケーションでは、以下の情報を収集します：</p>
+        <ul>
+            <li>ユーザーが入力する健康状態、症状に関する情報</li>
+            <li>体操・運動の実施記録</li>
+            <li>ユーザー設定情報（名前、年齢など）</li>
+        </ul>
+        <p>これらの情報はすべてユーザーのデバイス内にのみ保存され、外部に送信されることはありません。</p>
+        
+        <h3>2. 情報の利用目的</h3>
+        <p>収集した情報は、以下の目的にのみ使用されます：</p>
+        <ul>
+            <li>アプリの機能提供（健康記録の表示、体操提案など）</li>
+            <li>ユーザー体験の向上と機能改善</li>
+        </ul>
+        
+        <h3>3. 第三者への提供</h3>
+        <p>ユーザーの個人情報を第三者に提供することはありません。</p>
+        
+        <h3>4. データセキュリティ</h3>
+        <p>すべてのデータはデバイス内に保存され、iOS標準のセキュリティ機能によって保護されます。</p>
+        
+        <h3>5. データの削除</h3>
+        <p>アプリをアンインストールすることで、すべてのデータが完全に削除されます。</p>
+        
+        <h3>6. ポリシーの変更</h3>
+        <p>プライバシーポリシーは予告なく変更されることがあります。変更があった場合は、アプリ内またはこのページで通知します。</p>
+        
+        <p>最終更新日: 2025年5月13日</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 転倒予防日誌 開発チーム</p>
+        <p>このアプリは医療アドバイスの代わりにはなりません。体調に不安がある場合や、運動中に痛みを感じた場合は、すぐに中止し医療専門家に相談してください。</p>
+    </footer>
+</body>
+</html>
