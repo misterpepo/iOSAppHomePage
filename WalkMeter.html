@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalkMeter - プライバシーポリシー & サポート</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f5f5f7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #34C759, #30D158);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: #86868b;
+            font-size: 1.2em;
+        }
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #34C759;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #1d1d1f;
+            margin: 20px 0 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #424245;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #424245;
+        }
+        .highlight {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .highlight p {
+            margin: 0;
+            color: #2e7d32;
+            font-weight: 500;
+        }
+        .contact-info {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #34C759;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .language-switch {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .language-switch a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background: #34C759;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .language-switch a.inactive {
+            background: #e0e0e0;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #86868b;
+            font-size: 0.9em;
+        }
+        .section-ja, .section-en {
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">🚶</div>
+            <h1>WalkMeter</h1>
+            <p class="tagline">間歇性跛行評価のための歩行計測アプリ</p>
+        </header>
+
+        <div class="language-switch">
+            <a href="#" id="btn-ja" onclick="showLanguage('ja'); return false;">日本語</a>
+            <a href="#" id="btn-en" class="inactive" onclick="showLanguage('en'); return false;">English</a>
+        </div>
+
+        <!-- 日本語版 -->
+        <div id="content-ja" class="section-ja">
+            <div class="card">
+                <h2>プライバシーポリシー</h2>
+                <p><strong>最終更新日：2024年12月</strong></p>
+
+                <h3>はじめに</h3>
+                <p>WalkMeter（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーでは、本アプリがどのような情報を収集し、どのように使用するかについて説明します。</p>
+
+                <h3>収集する情報</h3>
+                <div class="highlight">
+                    <p>本アプリは、個人を特定できる情報を収集しません。</p>
+                </div>
+
+                <h3>カメラの使用について</h3>
+                <p>本アプリは、ARKit技術を使用して歩行距離を計測するためにカメラへのアクセスを必要とします。</p>
+                <ul>
+                    <li>カメラは距離計測のためのみに使用されます</li>
+                    <li>カメラで撮影された映像は記録・保存されません</li>
+                    <li>カメラ映像は外部サーバーに送信されません</li>
+                    <li>カメラ映像はリアルタイム処理のみに使用され、処理後は即座に破棄されます</li>
+                </ul>
+
+                <h3>データの保存</h3>
+                <p>本アプリで記録される計測データ（歩行距離、時間、症状マーク、メモ）は、すべてお使いのデバイス内にのみ保存されます。</p>
+                <ul>
+                    <li>データは外部サーバーに送信されません</li>
+                    <li>データはクラウドにアップロードされません</li>
+                    <li>データは第三者と共有されません</li>
+                    <li>アプリを削除すると、すべてのデータが完全に削除されます</li>
+                </ul>
+
+                <h3>第三者サービス</h3>
+                <p>本アプリは、分析ツール、広告ネットワーク、その他の第三者サービスを使用していません。</p>
+
+                <h3>お子様のプライバシー</h3>
+                <p>本アプリは、13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+
+                <h3>プライバシーポリシーの変更</h3>
+                <p>本プライバシーポリシーは、必要に応じて更新される場合があります。重要な変更がある場合は、本ページにて通知いたします。</p>
+            </div>
+
+            <div class="card">
+                <h2>サポート</h2>
+                
+                <h3>よくある質問</h3>
+                
+                <h4 style="margin-top: 15px; color: #34C759;">Q: 距離が正確に計測されません</h4>
+                <p>以下の点をご確認ください：</p>
+                <ul>
+                    <li>明るい場所で使用してください</li>
+                    <li>デバイスをゆっくり安定して動かしてください</li>
+                    <li>特徴のない壁や床を避けてください</li>
+                    <li>トラッキング状態が「正常」になってから計測を開始してください</li>
+                </ul>
+
+                <h4 style="margin-top: 15px; color: #34C759;">Q: カメラへのアクセスを許可するのはなぜですか？</h4>
+                <p>本アプリはARKit技術を使用して歩行距離を計測します。カメラは周囲の環境を認識し、デバイスの移動距離を計算するために必要です。カメラ映像は記録・保存されません。</p>
+
+                <h4 style="margin-top: 15px; color: #34C759;">Q: データはバックアップされますか？</h4>
+                <p>計測データはデバイス内に保存されます。iCloudバックアップが有効な場合、アプリデータもバックアップに含まれる可能性があります。</p>
+
+                <h3>お問い合わせ</h3>
+                <div class="contact-info">
+                    <p>ご質問、ご意見、不具合の報告は、App Storeのレビュー欄またはアプリ評価画面よりお寄せください。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- English Version -->
+        <div id="content-en" class="section-en hidden">
+            <div class="card">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated: December 2024</strong></p>
+
+                <h3>Introduction</h3>
+                <p>WalkMeter ("the App") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains what information the App collects and how it is used.</p>
+
+                <h3>Information We Collect</h3>
+                <div class="highlight">
+                    <p>This App does not collect any personally identifiable information.</p>
+                </div>
+
+                <h3>Camera Usage</h3>
+                <p>This App requires camera access to measure walking distance using ARKit technology.</p>
+                <ul>
+                    <li>The camera is used solely for distance measurement</li>
+                    <li>Camera footage is not recorded or saved</li>
+                    <li>Camera footage is not transmitted to external servers</li>
+                    <li>Camera footage is used only for real-time processing and is immediately discarded after processing</li>
+                </ul>
+
+                <h3>Data Storage</h3>
+                <p>All measurement data recorded by this App (walking distance, time, symptom marks, notes) is stored only on your device.</p>
+                <ul>
+                    <li>Data is not sent to external servers</li>
+                    <li>Data is not uploaded to the cloud</li>
+                    <li>Data is not shared with third parties</li>
+                    <li>Deleting the app will permanently delete all data</li>
+                </ul>
+
+                <h3>Third-Party Services</h3>
+                <p>This App does not use analytics tools, advertising networks, or other third-party services.</p>
+
+                <h3>Children's Privacy</h3>
+                <p>This App does not intentionally collect personal information from children under 13 years of age.</p>
+
+                <h3>Changes to This Privacy Policy</h3>
+                <p>This Privacy Policy may be updated as needed. Any significant changes will be notified on this page.</p>
+            </div>
+
+            <div class="card">
+                <h2>Support</h2>
+                
+                <h3>Frequently Asked Questions</h3>
+                
+                <h4 style="margin-top: 15px; color: #34C759;">Q: Distance is not measured accurately</h4>
+                <p>Please check the following:</p>
+                <ul>
+                    <li>Use in a well-lit area</li>
+                    <li>Move the device slowly and steadily</li>
+                    <li>Avoid featureless walls or floors</li>
+                    <li>Start measurement after tracking status shows "Normal"</li>
+                </ul>
+
+                <h4 style="margin-top: 15px; color: #34C759;">Q: Why do I need to allow camera access?</h4>
+                <p>This App uses ARKit technology to measure walking distance. The camera is needed to recognize the surrounding environment and calculate device movement. Camera footage is not recorded or saved.</p>
+
+                <h4 style="margin-top: 15px; color: #34C759;">Q: Is my data backed up?</h4>
+                <p>Measurement data is stored on your device. If iCloud backup is enabled, app data may be included in the backup.</p>
+
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <p>For questions, feedback, or bug reports, please use the App Store review section or the app rating screen.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 WalkMeter. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            const jaContent = document.getElementById('content-ja');
+            const enContent = document.getElementById('content-en');
+            const btnJa = document.getElementById('btn-ja');
+            const btnEn = document.getElementById('btn-en');
+
+            if (lang === 'ja') {
+                jaContent.classList.remove('hidden');
+                enContent.classList.add('hidden');
+                btnJa.classList.remove('inactive');
+                btnEn.classList.add('inactive');
+            } else {
+                jaContent.classList.add('hidden');
+                enContent.classList.remove('hidden');
+                btnJa.classList.add('inactive');
+                btnEn.classList.remove('inactive');
+            }
+        }
+    </script>
+</body>
+</html>
