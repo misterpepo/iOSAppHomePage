@@ -1,142 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>リハビリ振り分けアプリ サポートページ</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #2a7db5;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #2a7db5;
-            margin-top: 30px;
-        }
-        .footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            font-size: 0.9em;
-            color: #666;
-        }
-        .faq-item {
-            margin-bottom: 20px;
-        }
-        .faq-question {
-            font-weight: bold;
-            color: #444;
-        }
-        .contact-info {
-            background-color: #f8f8f8;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-        .small-text {
-            font-size: 0.85em;
-            color: #777;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>リハビリ代行振り分け表 使い方・サポート</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#243344;max-width:800px;margin:auto;padding:24px}h1,h2{color:#176b87;line-height:1.4}h1{font-size:1.8rem}h2{margin-top:2rem;font-size:1.3rem}a{color:#086c9c}footer{margin-top:3rem;border-top:1px solid #ddd;padding-top:1rem}.note{background:#eef5f7;padding:16px;border-radius:8px}@media(prefers-color-scheme:dark){body{background:#14212c;color:#e7eef4}h1,h2,a{color:#83cfe9}.note{background:#203441}}</style>
 </head>
 <body>
-    <h1>リハビリ振り分けアプリ サポートページ</h1>
-    
-    <section>
-        <h2>アプリについて</h2>
-        <p>「リハビリ振り分けアプリ」は、リハビリテーション部門でのスタッフと患者の割り当て管理を効率化するためのツールです。主担当と代行の管理、患者情報の記録、日別の振り分け表作成などの機能を提供しています。</p>
-        
-        <p>主な機能：</p>
-        <ul>
-            <li>患者とスタッフの情報管理</li>
-            <li>日別の振り分け表作成と管理</li>
-            <li>主担当と代行の自動振り分け</li>
-            <li>スタッフの出勤状況管理</li>
-            <li>新患管理</li>
-            <li>ドラッグ＆ドロップでの簡単割り当て変更</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>よくある質問 (FAQ)</h2>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: アプリのデータはどこに保存されますか？</p>
-            <p>A: すべてのデータはお使いのデバイス内にローカル保存されます。クラウドやサーバーへのデータ送信は行っておりません。</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: データのバックアップ方法はありますか？</p>
-            <p>A: 設定画面からデータをエクスポートすることができます。エクスポートしたデータは後日インポートすることも可能です。定期的にバックアップすることをお勧めします。</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: 複数のデバイス間でデータを共有できますか？</p>
-            <p>A: 現在のバージョンでは、デバイス間の自動同期機能はありません。データをエクスポートして別のデバイスにインポートすることで手動での共有が可能です。</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: iPadとiPhoneのどちらでも使用できますか？</p>
-            <p>A: はい、iPadとiPhone両方に対応しています。デバイスに合わせた最適なレイアウトで表示されます。</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: 自動振り分け機能はどのように動作しますか？</p>
-            <p>A: 患者ごとに設定された「本担当」を基準に、スタッフの出勤状況を考慮して自動的に振り分けを行います。本担当が休みの場合は、出勤中のスタッフに代行として割り当てられます。</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>サポート・お問い合わせ</h2>
-        <p>アプリについてのご質問、ご意見、バグ報告などがございましたら、以下の方法でお問い合わせください。</p>
-        
-        <div class="contact-info">
-            <p>メールアドレス: <a href="mailto:support@rehabapp.example.com">support@rehabapp.example.com</a></p>
-            <p class="small-text">SNSでのお問い合わせ: <a href="https://twitter.com/tsukare0524">Twitter (@tsukare0524)</a></p>
-            <p>サポート対応時間: 平日 9:00〜17:00</p>
-        </div>
-    </section>
-    
-    <section>
-        <h2>アップデート情報</h2>
-        <p>最新のアップデート情報はApp Store内のアプリページでご確認いただけます。</p>
-    </section>
-
-    <section>
-        <h2>プライバシーポリシー</h2>
-        <p>当アプリは、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。</p>
-        
-        <h3>1. 収集する情報</h3>
-        <p>当アプリは、ユーザーが入力したスタッフ情報、患者情報、振り分け情報のみを収集し、デバイス内に保存します。</p>
-        
-        <h3>2. 情報の利用目的</h3>
-        <p>収集した情報は、アプリの機能提供のためにのみ使用され、第三者への提供や販売は行いません。</p>
-        
-        <h3>3. データの保管</h3>
-        <p>すべてのデータはお使いのデバイス内にのみ保存され、外部サーバーへの送信は行いません。</p>
-        
-        <h3>4. データの削除</h3>
-        <p>アプリをアンインストールするか、設定画面の「データリセット」機能を使用することで、すべてのデータを削除できます。</p>
-        
-        <h3>5. セキュリティ</h3>
-        <p>当アプリは、保存されたデータの保護に努めていますが、デバイス自体のセキュリティ対策（パスコードやTouch ID/Face IDの設定）も推奨しています。</p>
-        
-        <h3>6. 変更</h3>
-        <p>プライバシーポリシーの内容は、必要に応じて変更されることがあります。重要な変更がある場合は、アプリ内またはこのページでお知らせします。</p>
-    </section>
-    
-    <footer class="footer">
-        <p>&copy; 2025 リハビリ振り分けアプリ. All rights reserved.</p>
-        <p>最終更新日: 2025年5月13日</p>
-    </footer>
+<h1>リハビリ代行振り分け表<br>使い方・サポート</h1>
+<p>iPhone・iPadで、日々の担当と当日代行を管理するアプリです。アプリ上の表示名は「リハ代行」です。バージョン3.0はiOS・iPadOS 18.2以降に対応します。</p>
+<h2>はじめに</h2>
+<ol>
+<li>「名簿」でスタッフと患者を登録します。患者には本担当を設定できます。</li>
+<li>「振り分け」でその日の表を作成し、スタッフの「出勤設定」を確認します。</li>
+<li>「自動振り分け」の変更予定を確認して反映するか、患者を選んで当日担当と枠を指定します。</li>
+<li>「未処理患者」で未配置・代行が必要な患者・確認事項を確認します。</li>
+</ol>
+<h2>バージョン3.0の全体表</h2>
+<ul>
+<li>起動時は全体表を表示します。スタッフ列と枠見出しを固定し、縦横にスクロールできます。スタッフ別表示にも切り替えられます。</li>
+<li>患者名・スタッフ名・PHSで検索できます。未配置患者も検索対象です。検索中も全体の集計値は変わりません。</li>
+<li>スタッフ欄をタップすると、その人の当日の勤務状態・応援参加・担当上限を変更できます。休みに変更しても配置は残り、代行が必要な患者を強調します。</li>
+<li>担当候補に現在人数・上限・当日の退院予定人数を表示します。スタッフ間のドラッグ移動は、移動先と当日代行の内容を確認して実行します。</li>
+</ul>
+<h2>出勤なのに振り分け対象にならないとき</h2>
+<p>通常スタッフは「出勤」で参加します。応援スタッフは「出勤」に加え「応援として参加」をオンにします。休み・対応不可・要確認・休止中のスタッフや、上限に達したスタッフには新たな配置ができません。候補に表示する理由を確認してください。</p>
+<p>3.0では、今日（日本時間）以降の通常スタッフに残った古い不参加状態を、バックアップ後に補正します。過去日は自動変更しません。過去の表に「参加状態の確認」が出る場合は、その日の出勤設定から「この日の参加状態を修正」を選べます。補正に失敗した場合は、表示される再実行ボタンでやり直せます。</p>
+<h2>当日代行と本担当の違い</h2>
+<p>表での担当変更やドラッグ移動は、その日の担当を変えます。本担当を継続して変更する場合は、患者編集の「本担当の変更」で適用日を指定します。</p>
+<h2>翌日の表と予定</h2>
+<p>「翌日作成」では、継続患者・本担当・継続メモ・予定を引き継ぎます。当日代行・当日メモ・出勤変更・応援参加・日別上限はリセットされます。作成前の説明を確認してください。作成済みなら翌日の表を開きます。入退院などの予定は「予定」で確認できます。</p>
+<h2>バックアップ・復元・共有</h2>
+<p>「設定」の「JSONバックアップを書き出す」で保存し、「JSONバックアップを読み込む」で復元します。復元は現在のデータ全体を置き換えるため、内容と件数を確認してください。置換前のデータはアプリ内に退避します。</p>
+<p>PDF・CSV・印刷は、表の操作メニューや設定から利用できます。入力情報が出力に含まれます。共有先は施設の運用に従って選んでください。端末間の自動同期はなく、JSONを使って手動で引き継ぎます。</p>
+<h2>保存と削除</h2>
+<p>入力データは端末のアプリ専用領域に保存され、開発者のサーバーへの自動送信はありません。名簿の休止は過去の履歴を保持します。全データの削除や外部へ書き出したデータの扱いは、<a href="リハビリ代行振り分け表.html">プライバシーポリシー</a>をご覧ください。</p>
+<h2>お問い合わせ</h2>
+<p class="note"><a href="https://twitter.com/tsukare0524">X（@tsukare0524）</a>へ、アプリのバージョン・端末とOS・操作手順・表示されたエラーをお知らせください。患者情報や施設の機密情報は送らないでください。画面を添付する場合は個人情報を隠してください。</p>
+<p>本アプリは担当調整を支える業務用ツールです。診断や治療方針を決める機能はありません。配置結果は利用者が確認してください。</p>
+<footer>最終更新日：2026年10月10日<br>© 2026 yuuki iwamoto</footer>
 </body>
 </html>
