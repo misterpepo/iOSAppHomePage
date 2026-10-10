@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WalkMeter - プライバシーポリシー & サポート</title>
+    <title>WalkMeter - Privacy Policy &amp; Support</title>
     <style>
         * {
             margin: 0;
@@ -137,26 +137,26 @@
         <header>
             <div class="app-icon">🚶</div>
             <h1>WalkMeter</h1>
-            <p class="tagline">間歇性跛行評価のための歩行計測アプリ</p>
+            <p class="tagline" id="tagline">Distance, time and steps</p>
         </header>
 
         <div class="language-switch">
-            <a href="#" id="btn-ja" onclick="showLanguage('ja'); return false;">日本語</a>
-            <a href="#" id="btn-en" class="inactive" onclick="showLanguage('en'); return false;">English</a>
+            <a href="#" id="btn-ja" class="inactive" onclick="showLanguage('ja'); return false;">日本語</a>
+            <a href="#" id="btn-en" onclick="showLanguage('en'); return false;">English</a>
         </div>
 
         <!-- 日本語版 -->
-        <div id="content-ja" class="section-ja">
+        <div id="content-ja" class="section-ja hidden">
             <div class="card">
                 <h2>プライバシーポリシー</h2>
-                <p><strong>最終更新日：2024年12月</strong></p>
+                <p><strong>最終更新日：2026年10月10日</strong></p>
 
                 <h3>はじめに</h3>
-                <p>WalkMeter（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーでは、本アプリがどのような情報を収集し、どのように使用するかについて説明します。</p>
+                <p>WalkMeter（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーでは、本アプリがどのような情報を使用し、どのように扱うかについて説明します。アカウント登録は不要です。</p>
 
                 <h3>収集する情報</h3>
                 <div class="highlight">
-                    <p>本アプリは、個人を特定できる情報を収集しません。</p>
+                    <p>本アプリは、歩行の記録やメモを開発者へ送信しません。計測に必要なカメラとモーションのデータは、端末内で処理します。</p>
                 </div>
 
                 <h3>カメラの使用について</h3>
@@ -165,20 +165,27 @@
                     <li>カメラは距離計測のためのみに使用されます</li>
                     <li>カメラで撮影された映像は記録・保存されません</li>
                     <li>カメラ映像は外部サーバーに送信されません</li>
-                    <li>カメラ映像はリアルタイム処理のみに使用され、処理後は即座に破棄されます</li>
+                    <li>カメラ映像は、計測のためのリアルタイム処理に使用されます</li>
                 </ul>
 
-                <h3>データの保存</h3>
-                <p>本アプリで記録される計測データ（歩行距離、時間、症状マーク、メモ）は、すべてお使いのデバイス内にのみ保存されます。</p>
+                <h3>モーションと歩数の使用について</h3>
+                <p>WalkMeter 2.0では、歩数を数えるために「モーションとフィットネス」へのアクセスを使用します。計測中は端末の動きから歩数を推定し、計測終了時に同じ区間のシステム歩数を確認します。モーションへのアクセスを許可しなくても、距離と時間を計測できます。</p>
+                <p>カメラとモーションへのアクセス許可は、端末の「設定」で変更できます。カメラへのアクセスは、距離計測に必要です。GPS位置情報やヘルスケアデータベースは使用しません。</p>
+
+                <h3>データの保存と削除</h3>
+                <p>保存した計測日時、歩行距離、時間、歩数、推定値の区分、メモは端末内に保存されます。過去のバージョンで保存した記録も引き続き端末内で扱います。表示単位や初回案内の完了状態も、アプリの設定として端末内に保存します。</p>
                 <ul>
-                    <li>データは外部サーバーに送信されません</li>
-                    <li>データはクラウドにアップロードされません</li>
-                    <li>データは第三者と共有されません</li>
-                    <li>アプリを削除すると、すべてのデータが完全に削除されます</li>
+                    <li>本アプリは、これらの記録や設定を開発者や第三者へアップロードしません</li>
+                    <li>保存した記録は「履歴」から削除できます</li>
+                    <li>アプリを削除すると、端末上のアプリデータは削除されます</li>
+                    <li>iCloudやコンピュータによる端末バックアップには、アプリデータが含まれる場合があります。既存のバックアップの保存や削除は、端末やバックアップの設定で別途管理してください</li>
                 </ul>
 
                 <h3>第三者サービス</h3>
-                <p>本アプリは、分析ツール、広告ネットワーク、その他の第三者サービスを使用していません。</p>
+                <p>本アプリには、広告、トラッキング、第三者の分析SDKは含まれません。このページや外部のサポートリンクをブラウザで開く場合は、各ウェブサイトのプライバシーポリシーが適用されます。</p>
+
+                <h3>動作確認のためのログ</h3>
+                <p>本アプリは、センサーの利用可否、追跡状態、エラー、歩数取得の状態や歩数を端末のシステムログへ記録することがあります。カメラ映像、メモ、移動経路はこのログに保存しません。AppleがOSやApp Storeで扱う購入、診断、利用状況などの情報には、Appleの設定とプライバシーポリシーが適用されます。</p>
 
                 <h3>お子様のプライバシー</h3>
                 <p>本アプリは、13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
@@ -196,36 +203,39 @@
                 <p>以下の点をご確認ください：</p>
                 <ul>
                     <li>明るい場所で使用してください</li>
-                    <li>デバイスをゆっくり安定して動かしてください</li>
+                    <li>背面カメラを覆わず、端末をなるべく安定させて持ってください</li>
                     <li>特徴のない壁や床を避けてください</li>
-                    <li>トラッキング状態が「正常」になってから計測を開始してください</li>
+                    <li>計測の準備ができてから「開始」をタップしてください</li>
                 </ul>
 
                 <h4 style="margin-top: 15px; color: #34C759;">Q: カメラへのアクセスを許可するのはなぜですか？</h4>
                 <p>本アプリはARKit技術を使用して歩行距離を計測します。カメラは周囲の環境を認識し、デバイスの移動距離を計算するために必要です。カメラ映像は記録・保存されません。</p>
+
+                <h4 style="margin-top: 15px; color: #34C759;">Q: 計測中と終了後で歩数が変わるのはなぜですか？</h4>
+                <p>WalkMeter 2.0の計測中の歩数は、端末の動きからの推定値です。終了時に同じ区間のシステム歩数を最大3秒間確認するため、値が変わる場合があります。システム歩数を取得できない場合は、その区間のモーションデータが揃っていれば推定値を表示し、それ以外は「—」を表示します。ゆっくりした歩行、すり足、手の動きなどにより、数え漏れや誤検出が生じることがあります。</p>
 
                 <h4 style="margin-top: 15px; color: #34C759;">Q: データはバックアップされますか？</h4>
                 <p>計測データはデバイス内に保存されます。iCloudバックアップが有効な場合、アプリデータもバックアップに含まれる可能性があります。</p>
 
                 <h3>お問い合わせ</h3>
                 <div class="contact-info">
-                    <p>ご質問、ご意見、不具合の報告は、App Storeのレビュー欄またはアプリ評価画面よりお寄せください。</p>
+                    <p>ご質問、ご意見、不具合の報告は、<a href="https://twitter.com/tsukare0524">開発者のサポートページ（X）</a>よりお寄せください。</p>
                 </div>
             </div>
         </div>
 
         <!-- English Version -->
-        <div id="content-en" class="section-en hidden">
+        <div id="content-en" class="section-en">
             <div class="card">
                 <h2>Privacy Policy</h2>
-                <p><strong>Last Updated: December 2024</strong></p>
+                <p><strong>Last Updated: October 10, 2026</strong></p>
 
                 <h3>Introduction</h3>
-                <p>WalkMeter ("the App") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains what information the App collects and how it is used.</p>
+                <p>WalkMeter ("the App") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains what information the App uses and how it is handled. No account is required.</p>
 
                 <h3>Information We Collect</h3>
                 <div class="highlight">
-                    <p>This App does not collect any personally identifiable information.</p>
+                    <p>The App does not send your walks or notes to the developer. Camera and motion data used for measurement are processed on your device.</p>
                 </div>
 
                 <h3>Camera Usage</h3>
@@ -234,20 +244,27 @@
                     <li>The camera is used solely for distance measurement</li>
                     <li>Camera footage is not recorded or saved</li>
                     <li>Camera footage is not transmitted to external servers</li>
-                    <li>Camera footage is used only for real-time processing and is immediately discarded after processing</li>
+                    <li>Camera footage is used for real-time measurement processing</li>
                 </ul>
 
-                <h3>Data Storage</h3>
-                <p>All measurement data recorded by this App (walking distance, time, symptom marks, notes) is stored only on your device.</p>
+                <h3>Motion and Step Counting</h3>
+                <p>WalkMeter 2.0 uses Motion &amp; Fitness access to count steps. During a walk, it estimates steps from device movement. At the end, it checks the system step count for the same interval. Distance and time still work if you do not allow motion access.</p>
+                <p>You can change camera and motion permissions in your device's Settings. Camera access is needed to measure distance. The App does not use GPS location or the Health database.</p>
+
+                <h3>Data Storage and Deletion</h3>
+                <p>Saved measurement dates, walking distance, duration, step counts, estimate indicators, and notes are stored on your device. Records saved in earlier versions also remain on your device. Display units and onboarding completion are stored locally as app settings.</p>
                 <ul>
-                    <li>Data is not sent to external servers</li>
-                    <li>Data is not uploaded to the cloud</li>
-                    <li>Data is not shared with third parties</li>
-                    <li>Deleting the app will permanently delete all data</li>
+                    <li>The App does not upload these records or settings to the developer or third parties</li>
+                    <li>You can delete saved walks from History</li>
+                    <li>Deleting the app removes its app data from your device</li>
+                    <li>iCloud or computer backups of your device may include app data. Retention and deletion of existing backups are managed separately in your device or backup settings</li>
                 </ul>
 
                 <h3>Third-Party Services</h3>
-                <p>This App does not use analytics tools, advertising networks, or other third-party services.</p>
+                <p>The App contains no advertising, tracking, or third-party analytics SDKs. If you open this page or an external support link in your browser, the privacy policy of that website applies.</p>
+
+                <h3>Diagnostic Logs</h3>
+                <p>The App may write sensor availability, tracking state, errors, step-query status, and step totals to the device's system log for troubleshooting. Camera images, notes, and walking routes are not saved in that log. Purchase, diagnostic, and usage information handled by Apple through its operating system or the App Store is subject to Apple's settings and privacy policy.</p>
 
                 <h3>Children's Privacy</h3>
                 <p>This App does not intentionally collect personal information from children under 13 years of age.</p>
@@ -265,26 +282,29 @@
                 <p>Please check the following:</p>
                 <ul>
                     <li>Use in a well-lit area</li>
-                    <li>Move the device slowly and steadily</li>
+                    <li>Keep the rear camera uncovered and hold the device as steadily as possible</li>
                     <li>Avoid featureless walls or floors</li>
-                    <li>Start measurement after tracking status shows "Normal"</li>
+                    <li>Wait until tracking is ready, then tap Start</li>
                 </ul>
 
                 <h4 style="margin-top: 15px; color: #34C759;">Q: Why do I need to allow camera access?</h4>
                 <p>This App uses ARKit technology to measure walking distance. The camera is needed to recognize the surrounding environment and calculate device movement. Camera footage is not recorded or saved.</p>
+
+                <h4 style="margin-top: 15px; color: #34C759;">Q: Why can the final step count differ from the live count?</h4>
+                <p>Live steps in WalkMeter 2.0 are estimated from device movement. At the end, the app checks the system step count for the same interval for up to three seconds, which may change the count. If the system count is unavailable, a complete motion estimate is kept and labeled; otherwise steps show a dash. Very slow steps, shuffling, and hand movement can cause missed or extra steps.</p>
 
                 <h4 style="margin-top: 15px; color: #34C759;">Q: Is my data backed up?</h4>
                 <p>Measurement data is stored on your device. If iCloud backup is enabled, app data may be included in the backup.</p>
 
                 <h3>Contact Us</h3>
                 <div class="contact-info">
-                    <p>For questions, feedback, or bug reports, please use the App Store review section or the app rating screen.</p>
+                    <p>For questions, feedback, or bug reports, visit the <a href="https://twitter.com/tsukare0524">developer support page on X</a>.</p>
                 </div>
             </div>
         </div>
 
         <footer>
-            <p>© 2024 WalkMeter. All rights reserved.</p>
+            <p>© 2026 WalkMeter. All rights reserved.</p>
         </footer>
     </div>
 
@@ -295,6 +315,10 @@
             const btnJa = document.getElementById('btn-ja');
             const btnEn = document.getElementById('btn-en');
 
+            document.documentElement.lang = lang === 'ja' ? 'ja' : 'en';
+            document.getElementById('tagline').textContent = lang === 'ja'
+                ? '距離・時間・歩数を手軽に計測'
+                : 'Distance, time and steps';
             if (lang === 'ja') {
                 jaContent.classList.remove('hidden');
                 enContent.classList.add('hidden');
@@ -307,6 +331,7 @@
                 btnEn.classList.remove('inactive');
             }
         }
+        showLanguage(navigator.language.toLowerCase().startsWith('ja') ? 'ja' : 'en');
     </script>
 </body>
 </html>
