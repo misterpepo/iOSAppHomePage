@@ -7,8 +7,11 @@
 <style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.8;color:#243344;max-width:800px;margin:auto;padding:24px}h1,h2{color:#176b87;line-height:1.4}h1{font-size:1.8rem}h2{margin-top:2rem;font-size:1.3rem}a{color:#086c9c}footer{margin-top:3rem;border-top:1px solid #ddd;padding-top:1rem}.note{background:#eef5f7;padding:16px;border-radius:8px}@media(prefers-color-scheme:dark){body{background:#14212c;color:#e7eef4}h1,h2,a{color:#83cfe9}.note{background:#203441}}</style>
 </head>
 <body>
+<nav><a href="#support-ja">日本語</a> · <a href="#support-en">English</a></nav>
+<section id="support-ja">
 <h1>リハビリ代行振り分け表<br>使い方・サポート</h1>
-<p>iPhone・iPadで、日々の担当と当日代行を管理するアプリです。アプリ上の表示名は「リハ代行」です。バージョン3.0はiOS・iPadOS 18.2以降に対応します。</p>
+<p>iPhone・iPadで、日々の担当と当日代行を管理するアプリです。アプリ上の表示名は「リハ代行」です。バージョン3.0以降はiOS・iPadOS 18.2以降に対応します。</p>
+<p>アプリ本体の買い切りで全機能を利用できます。アプリ内購入・広告・サブスクリプションはありません。価格は国・地域のApp Storeで確認できます。</p>
 <h2>はじめに</h2>
 <ol>
 <li>「名簿」でスタッフと患者を登録します。患者には本担当を設定できます。</li>
@@ -35,9 +38,37 @@
 <p>PDF・CSV・印刷は、表の操作メニューや設定から利用できます。入力情報が出力に含まれます。共有先は施設の運用に従って選んでください。端末間の自動同期はなく、JSONを使って手動で引き継ぎます。</p>
 <h2>保存と削除</h2>
 <p>入力データは端末のアプリ専用領域に保存され、開発者のサーバーへの自動送信はありません。名簿の休止は過去の履歴を保持します。全データの削除や外部へ書き出したデータの扱いは、<a href="リハビリ代行振り分け表.html">プライバシーポリシー</a>をご覧ください。</p>
+<h2>表示言語・日付・CSV</h2>
+<p>端末の設定からアプリの言語を日本語・英語に切り替えられます。入力した名前やメモは翻訳しません。表示形式だけが変わり、業務日の日付キーと日付の区切りは日本時間のままです。担当上限は予備枠を含めた患者の配置数です。PHSは職場の内線番号として扱い、先頭の0を保持します。</p>
+<p>英語画面では英語のCSVを作成できます。列順、日付形式、番号は従来と同じです。日本語見出しを利用する外部処理向けには「CSVを書き出す（従来の日本語形式）」を選んでください。CSVは読み込み用ではなく、復元にはJSONを使います。</p>
 <h2>お問い合わせ</h2>
-<p class="note"><a href="https://twitter.com/tsukare0524">X（@tsukare0524）</a>へ、アプリのバージョン・端末とOS・操作手順・表示されたエラーをお知らせください。患者情報や施設の機密情報は送らないでください。画面を添付する場合は個人情報を隠してください。</p>
+<p class="note"><a href="mailto:misterdevelop.support@gmail.com">misterdevelop.support@gmail.com</a>へ、アプリのバージョン・端末とOS・操作手順・表示されたエラーをお知らせください。患者情報や施設の機密情報は送らないでください。画面を添付する場合は個人情報を隠してください。</p>
 <p>本アプリは担当調整を支える業務用ツールです。診断や治療方針を決める機能はありません。配置結果は利用者が確認してください。</p>
-<footer>最終更新日：2026年10月10日<br>© 2026 yuuki iwamoto</footer>
+<p>メールが開けない場合は、アドレスをコピーしてWebメールなどをご利用ください。アプリの設定にもコピー操作があります。<a href="https://misterpepo.github.io/misterdevelop-support/">共通サポートサイト</a></p>
+</section>
+<section id="support-en" lang="en">
+<h1>Rehab Cover — Help and Support</h1>
+<p>Rehab Cover organizes daily assignments and cover for rehabilitation teams on iPhone and iPad with iOS/iPadOS 18.2 or later. A one-time paid download includes all features, with no in-app purchases, subscriptions or ads. Check the App Store for regional pricing.</p>
+<h2>Getting started</h2>
+<ol><li>Open Rosters and add staff and patients. Set each patient’s primary therapist.</li><li>Open Assignments, create the selected day’s board and check Attendance.</li><li>Use Auto-assign to preview changes, then Apply. Cancel leaves the board unchanged. You can also choose a patient, assigned therapist and destination slot manually.</li><li>Review Pending patients for unassigned patients, cover needs and attendance or data issues.</li></ol>
+<h2>Attendance and eligibility</h2>
+<p>Regular staff are eligible when On duty. Support staff must also have Participate as support staff enabled. Off duty, Unavailable, Needs review and inactive staff are excluded. The patient limit counts all assignments, including the reserve slot. Slot 10 is the reserve slot; slots 11–20 are additional slots. Extension/PHS is a workplace phone number and preserves leading zeros.</p>
+<p>Changing attendance preserves current assignments and highlights patients needing cover. Candidate lists show current counts, patient limits, discharges that day and exclusion reasons.</p>
+<h2>Primary therapists and daily cover</h2>
+<p>Moving a patient on the board changes that day only. Dragging between staff asks you to confirm the destination and whether this is cover or a return to the primary therapist. To change the continuing primary therapist, open the patient panel, choose Change primary therapist and specify an effective date. Earlier history is retained.</p>
+<h2>The board and schedule</h2>
+<p>The full board keeps staff names and slot headings visible while scrolling. You can switch to By staff and search patient names, staff names and extensions, including unassigned patients. Totals continue to cover the full board. The Schedule tab shows admissions, transfers, discharges and saved boards.</p>
+<p>Create next day carries forward continuing patients, primary therapists, ongoing notes and scheduled admissions/discharges. Daily cover, daily notes, attendance changes, support participation and daily limits reset. Read the confirmation before creating a day. An existing next-day board is opened without replacement.</p>
+<h2>Backups and exports</h2>
+<p>In Settings, Export JSON backup saves your data. Import JSON backup shows counts and issues before replacing all data, and keeps a backup of the previous file. Current and legacy JSON backups are supported. Old migration originals are retained. Participation repair only changes stale regular-staff participation on today and future days when needed; past days and assignments are preserved.</p>
+<p>Create a PDF, print or export CSV from Board actions or Settings. PDF output repeats table headings across landscape A4 pages and includes unresolved issues. Exports contain entered information, so choose destinations according to your organization’s policies. There is no automatic device synchronization.</p>
+<h2>Language, dates and CSV compatibility</h2>
+<p>Choose Japanese or English for the app in device Settings. Names and notes are not translated. Display dates follow your region; stored dates and the business-day boundary remain in Japan Standard Time. English CSV uses the same column order, date format and numbers as the original CSV. Select Export CSV (original Japanese format) for external workflows that depend on Japanese headers. Restore from JSON, not CSV.</p>
+<h2>Contact and privacy</h2>
+<p>Email <a href="mailto:misterdevelop.support@gmail.com?subject=Rehab%20Cover%20Support">misterdevelop.support@gmail.com</a> with the app name, device model, OS/app versions and steps that caused the issue. If email cannot open, use Copy email address in Settings and send through webmail. Do not send personal patient or staff records or confidential facility information.</p>
+<p>The app stores records locally and does not automatically send them to the developer. It is a coordination tool, not a diagnostic or treatment-decision tool. Review assignment results before using them.</p>
+<p><a href="https://misterpepo.github.io/misterdevelop-support/">Support site</a> · <a href="リハビリ代行振り分け表.html#privacy-en">Privacy policy</a></p>
+</section>
+<footer>最終更新日 / Last updated: 2026-10-24<br>© 2026 yuuki iwamoto</footer>
 </body>
 </html>
